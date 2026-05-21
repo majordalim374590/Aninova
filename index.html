@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniNova – Watch Anime Free</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">Ani<span>Nova</span></a>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search anime..." autocomplete="off">
+    <button id="searchBtn">🔍</button>
+    <div id="searchDropdown" class="search-dropdown"></div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html?tab=trending"  class="nav-link">TRENDING</a>
+    <a href="index.html?tab=new"       class="nav-link">NEW RELEASES</a>
+    <a href="index.html?tab=ongoing"   class="nav-link">ONGOING</a>
+    <a href="index.html?tab=recent"    class="nav-link">RECENT</a>
+    <a href="index.html?tab=upcoming"  class="nav-link">UPCOMING</a>
+    <a href="index.html?tab=completed" class="nav-link">COMPLETED</a>
+  </div>
+</nav>
+
+<section class="hero" id="heroBanner">
+  <div class="hero-skeleton"></div>
+</section>
+
+<main class="main-content">
+
+  <section class="anime-section" id="sec-recent">
+    <div class="section-header">
+      <h2>🕐 Recently Updated</h2>
+      <a href="index.html?tab=recent" class="see-all">See All →</a>
+    </div>
+    <div class="anime-row" id="recentGrid"><div class="loading-row"></div></div>
+  </section>
+
+  <section class="anime-section" id="sec-trending">
+    <div class="section-header">
+      <h2>🔥 Trending Now</h2>
+      <a href="index.html?tab=trending" class="see-all">See All →</a>
+    </div>
+    <div class="anime-row" id="trendingGrid"><div class="loading-row"></div></div>
+  </section>
+
+  <section class="anime-section" id="sec-new">
+    <div class="section-header">
+      <h2>🆕 New Releases</h2>
+      <a href="index.html?tab=new" class="see-all">See All →</a>
+    </div>
+    <div class="anime-row" id="newGrid"><div class="loading-row"></div></div>
+  </section>
+
+  <section class="anime-section" id="sec-upcoming">
+    <div class="section-header">
+      <h2>📅 Upcoming</h2>
+      <a href="index.html?tab=upcoming" class="see-all">See All →</a>
+    </div>
+    <div class="anime-row" id="upcomingGrid"><div class="loading-row"></div></div>
+  </section>
+
+  <section class="anime-section" id="sec-completed">
+    <div class="section-header">
+      <h2>✅ Completed</h2>
+      <a href="index.html?tab=completed" class="see-all">See All →</a>
+    </div>
+    <div class="anime-row" id="completedGrid"><div class="loading-row"></div></div>
+  </section>
+
+  <section class="anime-section hidden" id="sec-fullview">
+    <div class="section-header">
+      <h2 id="fullviewTitle"></h2>
+    </div>
+    <div class="anime-grid" id="fullviewGrid"></div>
+    <div class="pagination" id="pagination"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>🌸 AniNova — Personal use only. No copyright infringement intended.</p>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>

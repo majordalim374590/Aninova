@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniNova – Search</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">Ani<span>Nova</span></a>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search anime..." autocomplete="off">
+    <button id="searchBtn">🔍</button>
+    <div id="searchDropdown" class="search-dropdown"></div>
+  </div>
+</nav>
+
+<main class="main-content">
+  <section class="anime-section">
+    <div class="section-header">
+      <h2 id="searchTitle">Search Results</h2>
+    </div>
+    <div class="anime-grid" id="searchGrid">
+      <div class="loading-text">Searching...</div>
+    </div>
+    <div class="pagination" id="pagination"></div>
+  </section>
+</main>
+
+<footer class="footer"><p>🌸 AniNova</p></footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniNova – Watch</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="watch-body">
+
+<nav class="navbar navbar-compact">
+  <a href="index.html" class="logo">Ani<span>Nova</span></a>
+  <div class="watch-nav-info">
+    <span id="watchNavTitle">Loading...</span>
+  </div>
+</nav>
+
+<div class="watch-layout">
+
+  <div class="player-section">
+    <div class="player-wrap">
+      <iframe
+        id="animePlayer"
+        src=""
+        allowfullscreen
+        frameborder="0"
+        scrolling="no"
+        allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+      ></iframe>
+    </div>
+
+    <div class="player-controls-bar">
+      <div class="sub-dub-toggle">
+        <button id="btnSub" class="toggle-btn active" onclick="switchAudio('sub')">SUB</button>
+        <button id="btnDub" class="toggle-btn"        onclick="switchAudio('dub')">DUB</button>
+      </div>
+      <div class="server-select">
+        <label style="color:var(--text2);font-size:.8rem;margin-left:.8rem;">Server:</label>
+        <select id="serverSelect" onchange="switchServer(this.value)">
+          <option value="megaplay">MegaPlay</option>
+          <option value="vidsrc">VidSrc</option>
+        </select>
+      </div>
+      <span id="currentEpLabel" style="margin-left:auto;font-weight:700;font-size:.9rem;color:var(--text);"></span>
+    </div>
+
+    <div class="episode-info-bar">
+      <button id="prevEpBtn" class="ep-nav-btn" onclick="prevEpisode()">← Prev</button>
+      <span id="epProgressLabel" style="font-size:.85rem;color:var(--text2);"></span>
+      <button id="nextEpBtn" class="ep-nav-btn" onclick="nextEpisode()">Next →</button>
+    </div>
+  </div>
+
+  <div class="episode-sidebar">
+    <div class="sidebar-header">
+      <h3 id="sidebarAnimeTitle"></h3>
+      <span id="totalEpisodes" class="ep-count"></span>
+    </div>
+    <div class="ep-filter">
+      <input type="text" id="epSearch" placeholder="Jump to episode..." oninput="filterEpisodes(this.value)">
+    </div>
+    <div class="ep-list" id="episodeList">
+      <div class="loading-text">Loading episodes...</div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer"><p>🌸 AniNova</p></footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/watch.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AniNova – Anime Info</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">Ani<span>Nova</span></a>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search anime..." autocomplete="off">
+    <button id="searchBtn">🔍</button>
+    <div id="searchDropdown" class="search-dropdown"></div>
+  </div>
+  <div class="nav-links">
+    <a href="index.html?tab=trending"  class="nav-link">TRENDING</a>
+    <a href="index.html?tab=new"       class="nav-link">NEW RELEASES</a>
+    <a href="index.html?tab=ongoing"   class="nav-link">ONGOING</a>
+    <a href="index.html?tab=recent"    class="nav-link">RECENT</a>
+  </div>
+</nav>
+
+<div id="animeDetailRoot" class="detail-loading">Loading anime info...</div>
+
+<footer class="footer">
+  <p>🌸 AniNova — Personal use only.</p>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/anime.js"></script>
+</body>
+</html>
