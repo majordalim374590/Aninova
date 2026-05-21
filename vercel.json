@@ -1,1 +1,10 @@
-{}
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/anime", "destination": "/anime.html" },
+    { "source": "/watch", "destination": "/watch.html" },
+    { "source": "/search", "destination": "/search.html" }
+  ]
+}
